@@ -1,0 +1,14 @@
+.popup{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    position:relative;
+    bottom:-150px;
+}
+.popup h2{
+    font-size:20px;
+    color:red;
+    text-align: center;
+    display:flex;
+    
+}

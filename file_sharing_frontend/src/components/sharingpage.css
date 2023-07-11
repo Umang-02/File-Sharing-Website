@@ -1,0 +1,323 @@
+*{
+    background-color: white;
+}
+
+.body{
+    display:flex;
+    width:100%;
+    height:100%;
+}
+.left-text{
+    width:40%;
+    display:flex;
+}
+
+.left-text img{
+    height:100vh;
+    width:100%;
+}
+.uploadfiles{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:24px;
+    padding-bottom:48px;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0,0,0,.102);
+}
+
+.boxforupload{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    height:80vh;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    /* background-clip: border-box; */
+    background-color: #fff;
+    /* border: 1px solid #edeff0; */
+    border-radius: 2px;
+    /* width:30%;
+    height:60%; */
+    position: relative;
+}
+
+.boxforupload h2{
+    position:relative;
+    font-size: 48px;
+    top:-120px;
+}
+
+.boxforupload p{
+    position:relative;
+    top:-120px;
+    font-size:32px;
+}
+
+.filepond--panel-root {
+    width:20%;
+}
+.filepond--root{
+    width:280px;
+}
+
+/* .filepond--item { 
+    width: calc(50% - .5em); 
+}  */
+.filepond--item{
+    background: transparent;
+}
+.filepond--credits {
+    display: none;
+}
+
+.filepond--item-panel {
+    /* background: #555; */
+    background:transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the background color of the drop circle */
+.filepond--drip-blob {
+    /* background-color: #999; */
+    background:transparent;
+}
+
+/* the background color of the black action buttons */
+.filepond--file-action-button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* the icon color of the black action buttons */
+.filepond--file-action-button {
+    color: black;
+}
+.filepond--wrapper{
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.uploadfiles .filepond--file{
+    color:black;
+}
+.uploadfiles .filepond--file-action-button {
+    background-color: black;
+}
+.uploadfiles .filepond--item-panel {
+    background-color: #555;
+}
+
+.submission{
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 12px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position:relative;
+    bottom:-20px;
+    right:12px;
+  }
+  
+  .submission:disabled {
+    pointer-events: none;
+  }
+  
+  .submission:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .submission:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+.submission a{
+  text-decoration: none;
+  background-color: none;
+}
+
+.download{
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 12px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position:relative;
+    bottom:-20px;
+    right:0px;
+  }
+  
+  .download:disabled {
+    pointer-events: none;
+  }
+  
+  .download:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .download:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+.download a{    
+  text-decoration: none;
+  background-color: none;
+}
+
+.linkcopy{
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 12px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position:relative;
+    bottom:-20px;
+    right:-10px;
+  }
+  
+  .linkcopy:disabled {
+    pointer-events: none;
+  }
+  
+  .linkcopy:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .linkcopy:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+.linkcopy a{    
+  text-decoration: none;
+  background-color: none;
+}
+
+.success{
+    bottom:-30px;
+}
+.fail{
+    color:red;
+    top:30px;
+    position:relative;
+    font-size: 15px;
+    left:-10px;
+    transition:.3s;
+    animation: buttons .3s linear;
+    display:none;
+}
+.success{
+    color:green;
+    top:30px;
+    position:relative;
+    font-size: 15px;
+    left:-10px;
+    transition:.2s;
+    animation: buttons .2s linear;
+    display:none;
+}
+@keyframes buttons{
+    0%{
+        transform:scale(0.1);
+    }
+    50%{
+        transform:scale(0.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* .imageprogress{
+    width:160px;
+    height:160px;
+    background-color: aqua; 
+    position:relative;
+    right:60px;
+    top:50px;
+    border-radius:50%;
+    justify-items:center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    background:conic-gradient(#880bea 360deg,#ededed 0deg);
+    padding:20px;
+}
+
+.imageprogress::after{
+    position:absolute;
+    content: '';
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.imagevalue{
+    font-size:30px;
+    font-weight:600;
+    color:#880bea;
+    z-index: 9;
+} */

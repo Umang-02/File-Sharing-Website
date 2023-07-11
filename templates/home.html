@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="file" class="my-pond mt-4" name="filepond" id="fileupload" />
+    <div class="text-center">
+        <button class="btn btn-success" onclick="upload_file()">Upload File</button>
+    </div>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+
+    <script>
+        // Get a reference to the file input element
+        const inputElement = document.querySelector('input[id="fileupload"]');
+    
+        // // Create a FilePond instance
+        const pond = FilePond.create(inputElement);
+
+        function upload_file(){
+            var files=pond.getFiles()
+            var formdata=new FormData()
+            for(var i=0;i<files.length;i++)
+            {
+                formdata.append("files",files[i].file)
+            }
+            fetch('/handle/',{
+            method:"POST",
+            headers:{'X-CSRFToken':"{{csrf_token}}"},
+            body: formdata
+        }).then(res=>res.json()).then(result=>{console.log(result)})
+        }
+    </script>
+</body>
+</html>
