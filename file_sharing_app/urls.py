@@ -24,3 +24,4 @@ urlpatterns = [
     path('handle/',HandleFileUpload.as_view()),
     path('admin/', admin.site.urls),
 ]
+

@@ -1,5 +1,5 @@
 *{
-    background-color: white;
+    /* background-color: white; */
 }
 
 .body{
@@ -32,7 +32,7 @@
     width:70%;
     height:80vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     word-wrap: break-word;
     /* background-clip: border-box; */
     background-color: #fff;
@@ -43,16 +43,21 @@
     position: relative;
 }
 
+.text{
+    text-align: center;
+}
 .boxforupload h2{
     position:relative;
     font-size: 48px;
-    top:-120px;
+    /* top:-120px; */
+    
 }
 
 .boxforupload p{
     position:relative;
-    top:-120px;
+    /* top:-120px; */
     font-size:32px;
+    margin-bottom:1px;
 }
 
 .filepond--panel-root {
